@@ -1,5 +1,4 @@
 -- ii. Report of family members registered in a location with the number of related active club members
--- !!! ASSOCIATED LOCATIONS NOT POPULATED !!!
 SELECT 
     persons.firstName, 
     persons.lastName,
@@ -28,6 +27,7 @@ SELECT
     persons.medicareNumber, 
     persons.phoneNumber, 
     persons.address, 
+    persons.city,
     persons.province, 
     persons.postalCode, 
     persons.emailAddress, 
@@ -42,24 +42,26 @@ WHERE
 
 
 -- iv. Detailed list of all club members registered in the system
--- !!! ASSOCIATED LOCATIONS NOT POPULATED !!!
--- !!! Need to add CITY to locations table !!!
 SELECT 
     locations.name AS locationName, 
     clubMembers.membershipNumber, 
     persons.firstName, 
     persons.lastName, 
     TIMESTAMPDIFF(YEAR, persons.dateOfBirth, CURDATE()) AS age, 
-    persons.address, -- used address instead but assignment wants city
+    persons.city,
     persons.province
 FROM 
     clubMembers
 JOIN 
     persons ON clubMembers.SSN = persons.SSN
 LEFT JOIN 
-    associatedLocations ON clubMembers.SSN = associatedLocations.familyMemberSSN
+    associatedFamily ON clubMembers.membershipNumber = associatedFamily.membershipNumber
+LEFT JOIN 
+    associatedLocations ON associatedFamily.familyMemberSSN = associatedLocations.familyMemberSSN
 LEFT JOIN 
     locations ON associatedLocations.locationID = locations.locationID
+WHERE
+	associatedLocations.endDate IS NULL
 ORDER BY 
     locations.name, 
     age;
@@ -74,6 +76,7 @@ SELECT
     persons.medicareNumber, 
     persons.phoneNumber, 
     persons.address, 
+    persons.city,
     persons.province, 
     persons.postalCode, 
     associatedFamily.relationship
@@ -84,15 +87,14 @@ JOIN
 JOIN 
     persons ON clubMembers.SSN = persons.SSN
 WHERE 
-    associatedFamily.familyMemberSSN = 333222111; -- change SSN to test other
+    associatedFamily.familyMemberSSN = 765432111; -- change SSN to test other
 
 
 -- vi. History of locations associated with a given family member
--- !!! ASSOCIATED LOCATIONS NOT POPULATED !!!
 SELECT 
     locations.name AS locationName, 
     locations.province, 
-    locations.address, -- used address instead but assignment wants city
+    locations.city,
     associatedLocations.startDate, 
     associatedLocations.endDate
 FROM 
@@ -100,7 +102,7 @@ FROM
 JOIN 
     locations ON associatedLocations.locationID = locations.locationID
 WHERE 
-    associatedLocations.familyMemberSSN = 666555444 -- change SSN to test other
+    associatedLocations.familyMemberSSN = 333222111 -- change SSN to test other
 ORDER BY 
     associatedLocations.startDate ASC;
 
