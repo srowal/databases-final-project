@@ -104,3 +104,15 @@ WHERE
 ORDER BY 
     associatedLocations.startDate ASC;
 
+
+-- viii
+SELECT cm.membershipNumber, l.name, al_1.startDate, al_2.startDate
+FROM clubMembers as cm
+inner join persons as p on p.SSN = cm.SSN
+inner join associatedFamily as af on cm.membershipNumber = af.membershipNumber
+inner join associatedLocations as al_1 on af.familyMemberSSN = al_1.familyMemberSSN
+inner join locations as l on al_1.locationID = l.locationID
+inner join associatedLocations as al_2 on af.familyMemberSSN = al_2.familyMemberSSN
+	where (al_1.endDate IS NOT NULL AND al_1.startDate < al_2.startDate)
+ORDER BY p.firstName, p.lastName, al_1.startDate ASC;
+
