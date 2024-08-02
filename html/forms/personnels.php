@@ -2,104 +2,115 @@
 include "../include/header.php";
 ?>
 
-<div>
-    <h4> CREATE </h4>
-    <form action = "../queries/personnels/createPersonnel.php" method="POST">
-        <label for="SSN">SSN</label><br>
-        <input type="text" name="SSN"><br>
+<link rel="stylesheet" href="../css/form_1.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-        <label for="firstName">firstName:</label><br>
-        <input type="text" name="firstName"><br>
+<div class="form_1">
+        <h2>Personnel</h2>
+        <div class="statements">
+            <div>
+                <h4> CREATE </h4>
+                <form action="../queries/personnels/createPersonnel.php" method="POST">
+                    <label for="SSN">SSN</label><br>
+                    <input type="text" name="SSN"><br>
 
-        <label for="lastName">lastName:</label><br>
-        <input type="text" name="lastName"><br>
+                    <label for="firstName">firstName:</label><br>
+                    <input type="text" name="firstName"><br>
 
-        <label for="dateOfBirth">dateOfBirth:</label><br>
-        <input type="text" name="dateOfBirth"><br>
+                    <label for="lastName">lastName:</label><br>
+                    <input type="text" name="lastName"><br>
 
-        <label for="medicareNumber">medicareNumber:</label><br>
-        <input type="text" name="medicareNumber"><br>
+                    <label for="dateOfBirth">dateOfBirth:</label><br>
+                    <input type="text" name="dateOfBirth"><br>
 
-        <label for="phoneNumber">phoneNumber:</label><br>
-        <input type="text" name="phoneNumber"><br>
+                    <label for="medicareNumber">medicareNumber:</label><br>
+                    <input type="text" name="medicareNumber"><br>
 
-        <label for="address">address:</label><br>
-        <input type="text" name="address"><br>
+                    <label for="phoneNumber">phoneNumber:</label><br>
+                    <input type="text" name="phoneNumber"><br>
 
-        <label for="city">city:</label><br>
-        <input type="text" name="city"><br>
+                    <label for="address">address:</label><br>
+                    <input type="text" name="address"><br>
 
-        <label for="province">province:</label><br>
-        <input type="text" name="province"><br>
+                    <label for="city">city:</label><br>
+                    <input type="text" name="city"><br>
 
-        <label for="postalCode">postalCode:</label><br>
-        <input type="text" name="postalCode"><br>
+                    <label for="province">province:</label><br>
+                    <input type="text" name="province"><br>
 
-        <label for="emailAddress">emailAddress:</label><br>
-        <input type="text" name="emailAddress"><br>
+                    <label for="postalCode">postalCode:</label><br>
+                    <input type="text" name="postalCode"><br>
 
-        <input type="submit" value="Submit">
-    </form>
-</div>
+                    <label for="emailAddress">emailAddress:</label><br>
+                    <input type="text" name="emailAddress"><br>
 
-<div>
-    <h4> READ </h4>
-    <form action = "../queries/personnels/readPersonnel.php" method="GET">
-        <label for="SSN">SSN</label><br>
-        <input type="text" name="SSN"><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
 
-        <input type="submit" value="Submit">
-    </form>
-</div>
+            <div>
+                <h4> READ </h4>
+                <form action="../queries/personnels/readPersonnel.php" method="GET">
+                    <label for="SSN">SSN</label><br>
+                    <input type="text" name="SSN"><br>
 
-<div>
-    <h4> UPDATE </h4>
-    <form action = "../queries/personnels/updatePersonnel.php" method="POST">
-        <label for="SSN">SSN</label><br>
-        <input type="text" name="SSN"><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
 
-        <label for="firstName">firstName:</label><br>
-        <input type="text" name="firstName"><br>
+            <div>
+                <h4> UPDATE </h4>
+                <form action="../queries/personnels/updatePersonnel.php" method="POST">
+                    <label for="SSN">SSN</label><br>
+                    <input type="text" name="SSN"><br>
 
-        <label for="lastName">lastName:</label><br>
-        <input type="text" name="lastName"><br>
+                    <label for="firstName">firstName:</label><br>
+                    <input type="text" name="firstName"><br>
 
-        <label for="dateOfBirth">dateOfBirth:</label><br>
-        <input type="text" name="dateOfBirth"><br>
+                    <label for="lastName">lastName:</label><br>
+                    <input type="text" name="lastName"><br>
 
-        <label for="medicareNumber">medicareNumber:</label><br>
-        <input type="text" name="medicareNumber"><br>
+                    <label for="dateOfBirth">dateOfBirth:</label><br>
+                    <input type="text" name="dateOfBirth"><br>
 
-        <label for="phoneNumber">phoneNumber:</label><br>
-        <input type="text" name="phoneNumber"><br>
+                    <label for="medicareNumber">medicareNumber:</label><br>
+                    <input type="text" name="medicareNumber"><br>
 
-        <label for="address">address:</label><br>
-        <input type="text" name="address"><br>
+                    <label for="phoneNumber">phoneNumber:</label><br>
+                    <input type="text" name="phoneNumber"><br>
 
-        <label for="city">city:</label><br>
-        <input type="text" name="city"><br>
+                    <label for="address">address:</label><br>
+                    <input type="text" name="address"><br>
 
-        <label for="province">province:</label><br>
-        <input type="text" name="province"><br>
+                    <label for="city">city:</label><br>
+                    <input type="text" name="city"><br>
 
-        <label for="postalCode">postalCode:</label><br>
-        <input type="text" name="postalCode"><br>
+                    <label for="province">province:</label><br>
+                    <input type="text" name="province"><br>
 
-        <label for="emailAddress">emailAddress:</label><br>
-        <input type="text" name="emailAddress"><br>
+                    <label for="postalCode">postalCode:</label><br>
+                    <input type="text" name="postalCode"><br>
 
-        <input type="submit" value="Submit">
-    </form>
-</div>
+                    <label for="emailAddress">emailAddress:</label><br>
+                    <input type="text" name="emailAddress"><br>
 
-<div>
-    <h4> DELETE </h4>
-    <form action = "../queries/personnels/deletePersonnel.php" method="POST">
-        <label for="SSN">SSN</label><br>
-        <input type="text" name="SSN"><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
 
-        <input type="submit" value="Submit">
-    </form>
-</div>
+            <div>
+                <h4> DELETE </h4>
+                <form action="../queries/personnels/deletePersonnel.php" method="POST">
+                    <label for="SSN">SSN</label><br>
+                    <input type="text" name="SSN"><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+        </div>
+    </div>
 
 <?php include "../include/footer.php";?>
