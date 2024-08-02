@@ -29,7 +29,7 @@ include "./include/header.php";
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>5. Create/Delete/Edit/Display a TeamFormation</h4>
-      <a href="./locations.php">Open statements</a>
+      <a href=".forms/teamFormations.php">Open statements</a>
     </div>
 
     <!-- UPDATE PATH -->
