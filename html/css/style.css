@@ -1,0 +1,44 @@
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+#desc {
+    display: flex;
+    justify-content: center;
+}
+
+#queries-list {
+    margin: auto;
+}
+
+.query {
+    width: 500px;
+    margin: auto;
+}
+
+.query button {
+    width: 70px;
+}
+
+.query h3 {
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: white;
+    height: 28px;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid black;
+    font-weight: 500;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.2s;
+    border-color: rgb(61, 149, 207);
+    color: rgb(61, 149, 207);
+}
+
