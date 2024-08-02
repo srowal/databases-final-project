@@ -68,7 +68,7 @@ include "./include/header.php";
     </div>
 
     <div class="query">
-      <a href="./locations.php">12. </a>
+      <a href="./queries/q12.php">12.</a>
     </div>
 
     <div class="query">
