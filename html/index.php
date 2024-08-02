@@ -47,7 +47,7 @@ include "./include/header.php";
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>8. For a given family member, get details of the secondary family member and all the associated club members with the primary family member</h4>
-      <a href="./queries/q07.php">Open query</a>
+      <a href="./queries/q08.php">Open query</a>
 
       <form action = "./queries/q08.php" method="GET">
         <label for="SSN">SSN</label><br>
@@ -59,7 +59,7 @@ include "./include/header.php";
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>9. For a given location and day, get details of all the teams formations recorded in the system</h4>
-      <a href="./queries/q07.php">Open query</a>
+      <a href="./queries/q09.php">Open query</a>
 
       <form action = "./queries/q09.php" method="GET">
         <label for="location">location</label><br>
@@ -73,13 +73,13 @@ include "./include/header.php";
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>10. Get details of club members who are currently active and have been associated with at least four different locations and are members for at most two years</h4>
-      <a href="./queries/q07.php">Open query</a>
+      <a href="./queries/q10.php">Open query</a>
     </div>
 
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>11. For a given period of time, give a report of the teams’ formations for all the locations</h4>
-      <a href="./queries/q07.php">Open query</a>
+      <a href="./queries/q11.php">Open query</a>
 
       <form action = "./queries/q11.php" method="GET">
         <label for="fromDate">From date:</label><br>
@@ -99,37 +99,37 @@ include "./include/header.php";
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>13. Get a report of all active club members who have only been assigned as goalkeepers in all the formation team sessions they have been assigned to</h4>
-      <a href="./queries/q07.php">Open query</a>
+      <a href="./queries/q13.php">Open query</a>
     </div>
 
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>14. Get a report of all active club members who have only been assigned at least once to every role throughout all the formation team game sessions</h4>
-      <a href="./queries/q07.php">Open query</a>
+      <a href="./queries/q14.php">Open query</a>
     </div>
 
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>15. For a given location, get the list of all family members who have currently active club members associated with them and are also head coaches for the same location</h4>
-      <a href="./queries/q07.php">Open query</a>
+      <a href="./queries/q15.php">Open query</a>
     </div>
 
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>16. Get a report of all active club members who have never lost a game in which they played in</h4>
-      <a href="./queries/q07.php">Open query</a>
+      <a href="./queries/q16.php">Open query</a>
     </div>
 
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>17. Get a report of all the personnels who were president of the club at least once or is currently president of the club</h4>
-      <a href="./queries/q07.php">Open query</a>
+      <a href="./queries/q17.php">Open query</a>
     </div>
 
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>18. Get a report of all volunteer personnels who are not family members of any club member</h4>
-      <a href="./queries/q07.php">Open query</a>
+      <a href="./queries/q18.php">Open query</a>
     </div>
 
 </section>
