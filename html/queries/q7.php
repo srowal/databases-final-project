@@ -42,20 +42,13 @@ error_reporting(E_ALL);
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
-            echo "generalManagerFirstName: " . $row["generalManagerFirstName"] . "<br>";
-            echo "generalManagerlastName: " . $row["generalManagerLastName"] . "<br>";
-            echo "Name: " . $row["name"] . "<br>";
-            echo "Phone Number: " . $row["phoneNumber"] . "<br>";
-            echo "Address: " . $row["address"] . "<br>";
-            echo "City: " . $row["city"] . "<br>";
-            echo "Province: " . $row["province"] . "<br>";
-            echo "Postal Code: " . $row["postalCode"] . "<br>";
-            echo "Max Capacity: " . $row["capacity"] . "<br>";
-            echo "Web Address: " . $row["webAddress"] . "<br>";
-            echo "Type: " . $row["type"] . "<br>";
-            echo "Total Members: " . $row["numberOfClubMembers"] . "<br><br>";
+            foreach ($row as $key => $value){
+                echo "$key : $value <br>";
+            }
+            echo "<br>";
         }
-    } else {
+    }
+    else {
         echo "No results";
     }
 

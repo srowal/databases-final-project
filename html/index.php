@@ -34,7 +34,12 @@ include "./include/header.php";
     </div>
 
     <div class="query">
-      <a href="./locations.php">8.</a>
+      <h4>8.</h4>
+      <form action = "./queries/q8.php" method="GET">
+        <label for="SSN">SSN</label><br>
+        <input type="text" name="SSN"><br>
+        <input type="submit" value="Submit">
+      </form>
     </div>
 
     <div class="query">
