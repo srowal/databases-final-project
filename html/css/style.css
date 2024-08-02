@@ -25,6 +25,10 @@ html {
     padding-top: 10px;
 }
 
+a {
+    font-size: 14px;
+}
+
 a, button {
     border-radius: 10px;
     background-color: white;
