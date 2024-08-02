@@ -47,27 +47,13 @@ include "./include/header.php";
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>8. For a given family member, get details of the secondary family member and all the associated club members with the primary family member</h4>
-      <a href="./queries/q08.php">Open query</a>
-
-      <form action = "./queries/q08.php" method="GET">
-        <label for="SSN">SSN</label><br>
-        <input type="text" name="SSN"><br>
-        <input type="submit" value="Submit">
-      </form>
+      <a href="./forms/form8.php">Open query</a>
     </div>
 
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>9. For a given location and day, get details of all the teams formations recorded in the system</h4>
-      <a href="./queries/q09.php">Open query</a>
-
-      <form action = "./queries/q09.php" method="GET">
-        <label for="location">location</label><br>
-        <input type="text" name="location"><br>
-        <label for="date">date</label><br>
-        <input type="text" name="date"><br>
-        <input type="submit" value="Submit">
-      </form>
+      <a href="./forms/form9.php">Open query</a>
     </div>
 
     <!-- UPDATE PATH -->
@@ -79,15 +65,7 @@ include "./include/header.php";
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>11. For a given period of time, give a report of the teams’ formations for all the locations</h4>
-      <a href="./queries/q11.php">Open query</a>
-
-      <form action = "./queries/q11.php" method="GET">
-        <label for="fromDate">From date:</label><br>
-        <input type="text" name="fromDate"><br>
-        <label for="toDate">To date:</label><br>
-        <input type="text" name="toDate"><br>
-        <input type="submit" value="Submit">
-      </form>
+      <a href="./forms/form11.php">Open query</a>
     </div>
 
     <!-- VERIFY QUERY REDIRECT -->
@@ -111,7 +89,7 @@ include "./include/header.php";
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>15. For a given location, get the list of all family members who have currently active club members associated with them and are also head coaches for the same location</h4>
-      <a href="./queries/q15.php">Open query</a>
+      <a href="./forms/form15.php">Open query</a>
     </div>
 
     <!-- UPDATE PATH -->

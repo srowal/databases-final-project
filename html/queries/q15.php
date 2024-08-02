@@ -6,19 +6,37 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-if (isset($_GET['SSN'])) {
-    $SSN = $_GET['SSN'];
+if (isset($_GET['locationID'])) {
+    $locationID = $_GET['locationID'];
 
-    $sql = "
-    SELECT sm.firstName as secondaryMemberFirstName, sm.lastName as secondaryMemberLastName, sm.phoneNumber as secondaryMemberPhoneNumber, p.firstName, p.lastName, p.dateOfBirth, p.SSN, p.medicareNumber, p.phoneNumber, p.address, p.city, p.province, p.postalCode, sm.relationship as secondaryMemberRelationship
-    FROM secondaryFamilyMembers sm
-        left JOIN familyMembers fm on fm.secondaryFamilyMemberID = sm.secondaryFamilyMemberID
-        left JOIN associatedFamily am on am.familyMemberSSN = fm.SSN
-        left JOIN clubMembers c on c.membershipNumber = am.membershipNumber
-        left JOIN persons p on p.SSN = c.SSN
-        WHERE fm.SSN = ?";
+    $sql = "SELECT DISTINCT
+        persons.firstName,
+        persons.lastName,
+        persons.phoneNumber
+        FROM
+        familyMembers
+        JOIN
+        persons ON familyMembers.SSN = persons.SSN
+        JOIN
+        associatedFamily ON familyMembers.SSN = associatedFamily.familyMemberSSN
+        JOIN
+        clubMembers ON associatedFamily.membershipNumber =
+        clubMembers.membershipNumber
+        JOIN
+        associatedLocations ON familyMembers.SSN = associatedLocations.familyMemberSSN
+        AND associatedLocations.endDate IS NULL
+        JOIN
+        teams ON familyMembers.SSN = teams.headCoachSSN AND teams.locationID =
+        associatedLocations.locationID
+        JOIN
+        teamFormation ON (teams.teamID = teamFormation.team1ID OR teams.teamID =
+        teamFormation.team2ID)
+        WHERE
+        associatedLocations.locationID = ?
+        ORDER BY
+        persons.firstName, persons.lastName;";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("s", $SSN);
+    $stmt->bind_param("i", $locationID);
     
     $stmt->execute();
     $result = $stmt->get_result();
@@ -39,5 +57,5 @@ if (isset($_GET['SSN'])) {
     $conn->close();
 
 } else {
-    echo "No SSN provided.";
+    echo "No locationID provided.";
 }
