@@ -82,11 +82,11 @@ include "./include/header.php";
     </div>
 
     <div class="query">
-      <a href="./locations.php">13.</a>
+      <a href="./queries/q13.php">13.</a>
     </div>
 
     <div class="query">
-      <a href="./locations.php">14.</a>
+      <a href="./queries/q14.php">14.</a>
     </div>
 
     <div class="query">
