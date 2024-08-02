@@ -7,8 +7,6 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 
-    global $conn;
-
     $sql = "SELECT
         locations.name,
         locations.address,
