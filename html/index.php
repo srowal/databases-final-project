@@ -29,6 +29,50 @@ include "./include/header.php";
       <a href="./locations.php">6. Create/Delete/Edit/Display a Location</a>
     </div>
 
+    <div class="query">
+      <a href="./queries/q7.php">7.</a>
+    </div>
+
+    <div class="query">
+      <a href="./locations.php">8.</a>
+    </div>
+
+    <div class="query">
+      <a href="./locations.php">9. </a>
+    </div>
+
+    <div class="query">
+      <a href="./locations.php">10.</a>
+    </div>
+
+    <div class="query">
+      <a href="./locations.php">11. </a>
+    </div>
+
+    <div class="query">
+      <a href="./locations.php">12. </a>
+    </div>
+
+    <div class="query">
+      <a href="./locations.php">13.</a>
+    </div>
+
+    <div class="query">
+      <a href="./locations.php">14.</a>
+    </div>
+
+    <div class="query">
+      <a href="./locations.php">15.</a>
+    </div>
+
+    <div class="query">
+      <a href="./locations.php">16.</a>
+    </div>
+
+    <div class="query">
+      <a href="./locations.php">17.</a>
+    </div>
+
 </section>
 
 <?php include "./include/footer.php";?>
