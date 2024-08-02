@@ -13,7 +13,7 @@ include "../include/header.php";
             <div>
                 <h4> CREATE </h4>
                 <form action="../queries/locations/createLocation.php" method="POST">
-                    <label for="locationID">Location ID</label><br>
+                    <label for="locationID">Location ID:</label><br>
                     <input type="text" name="locationID"><br>
 
                     <label for="name">name:</label><br>
@@ -53,7 +53,7 @@ include "../include/header.php";
             <div>
                 <h4> READ </h4>
                 <form action="../queries/locations/readLocation.php" method="GET">
-                    <label for="locationID">Location ID</label><br>
+                    <label for="locationID">Location ID:</label><br>
                     <input type="text" name="locationID"><br>
 
                     <input type="submit" value="Submit">
@@ -63,7 +63,7 @@ include "../include/header.php";
             <div>
                 <h4> UPDATE </h4>
                 <form action="../queries/locations/updateLocation.php" method="POST">
-                    <label for="locationID">Location ID</label><br>
+                    <label for="locationID">Location ID:</label><br>
                     <input type="text" name="locationID"><br>
 
                     <label for="name">name:</label><br>
@@ -103,7 +103,7 @@ include "../include/header.php";
             <div>
                 <h4> DELETE </h4>
                 <form action="../queries/locations/deleteLocation.php" method="POST">
-                    <label for="locationID">Location ID</label><br>
+                    <label for="locationID">Location ID:</label><br>
                     <input type="text" name="locationID"><br>
 
                     <input type="submit" value="Submit">
