@@ -3,11 +3,6 @@ require_once './config.php';
 include "./include/header.php";
 ?>
 
-<link rel="stylesheet" href="./css/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
 <section id="queries-list">
     <div class="query">
       <a href="./forms/locations.php">1. Create/Delete/Edit/Display a Location</a>
@@ -18,7 +13,7 @@ include "./include/header.php";
     </div>
 
     <div class="query">
-      <a href=".froms/familyMembers.php">3. Create/Delete/Edit/Display a Location</a>
+      <a href="./forms/familyMembers.php">3. Create/Delete/Edit/Display a Family Member</a>
     </div>
 
     <div class="query">
