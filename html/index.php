@@ -4,28 +4,38 @@ include "./include/header.php";
 ?>
 
 <section id="queries-list">
+
     <div class="query">
-      <a href="./forms/locations.php">1. Create/Delete/Edit/Display a Location</a>
+      <h4>1. Create/Delete/Edit/Display a Location</h4>
+      <a href="./forms/locations.php">Open statements</a>
     </div>
 
     <div class="query">
-      <a href="./forms/personnels.php">2. Create/Delete/Edit/Display a Personnel</a>
+      <h4>2. Create/Delete/Edit/Display a Personnel</h4>
+      <a href="./forms/personnels.php">Open statements</a>
     </div>
 
     <div class="query">
-      <a href="./forms/familyMembers.php">3. Create/Delete/Edit/Display a Family Member</a>
+      <h4>3. Create/Delete/Edit/Display a FamilyMember (Primary/Secondary)</h4>
+      <a href=".froms/familyMembers.php">Open statements</a>
     </div>
 
+    <!-- UPDATE PATH -->
     <div class="query">
-      <a href="./locations.php">4. Create/Delete/Edit/Display a Location</a>
+      <h4>4. Create/Delete/Edit/Display a ClubMember</h4>
+      <a href="./locations.php">Open statements</a>
     </div>
 
+    <!-- UPDATE PATH -->
     <div class="query">
-      <a href="./locations.php">5. Create/Delete/Edit/Display a Location</a>
+      <h4>5. Create/Delete/Edit/Display a TeamFormation</h4>
+      <a href="./locations.php">Open statements</a>
     </div>
 
+    <!-- UPDATE PATH -->
     <div class="query">
-      <a href="./locations.php">6. Create/Delete/Edit/Display a Location</a>
+      <h4>6. Assign/Delete/Edit a club member to a team formation</h4>
+      <a href="./locations.php">Open statements</a>
     </div>
 
     <div class="query">
