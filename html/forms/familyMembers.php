@@ -14,7 +14,7 @@ include "../include/header.php";
             <div>
                 <h4> CREATE </h4>
                 <form action="../queries/personnels/createPersonnel.php" method="POST">
-                    <label for="SSN">SSN</label><br>
+                    <label for="SSN">SSN:</label><br>
                     <input type="text" name="SSN"><br>
 
                     <label for="firstName">firstName:</label><br>
@@ -54,7 +54,7 @@ include "../include/header.php";
             <div>
                 <h4> READ </h4>
                 <form action="../queries/personnels/readPersonnel.php" method="GET">
-                    <label for="SSN">SSN</label><br>
+                    <label for="SSN">SSN:</label><br>
                     <input type="text" name="SSN"><br>
 
                     <input type="submit" value="Submit">
@@ -64,7 +64,7 @@ include "../include/header.php";
             <div>
                 <h4> UPDATE </h4>
                 <form action="../queries/personnels/updatePersonnel.php" method="POST">
-                    <label for="SSN">SSN</label><br>
+                    <label for="SSN">SSN:</label><br>
                     <input type="text" name="SSN"><br>
 
                     <label for="firstName">firstName:</label><br>
@@ -104,7 +104,7 @@ include "../include/header.php";
             <div>
                 <h4> DELETE </h4>
                 <form action="../queries/personnels/deletePersonnel.php" method="POST">
-                    <label for="SSN">SSN</label><br>
+                    <label for="SSN">SSN:</label><br>
                     <input type="text" name="SSN"><br>
 
                     <input type="submit" value="Submit">
@@ -118,7 +118,7 @@ include "../include/header.php";
             <div>
                 <h4> CREATE </h4>
                 <form action="../queries/" method="POST">
-                    <label for="SSN">SSN</label><br>
+                    <label for="SSN">SSN:</label><br>
                     <input type="text" name="SSN"><br>
 
                     <label for="firstName">firstName:</label><br>
@@ -158,7 +158,7 @@ include "../include/header.php";
             <div>
                 <h4> READ </h4>
                 <form action="../queries/" method="GET">
-                    <label for="SSN">SSN</label><br>
+                    <label for="SSN">SSN:</label><br>
                     <input type="text" name="SSN"><br>
 
                     <input type="submit" value="Submit">
@@ -168,7 +168,7 @@ include "../include/header.php";
             <div>
                 <h4> UPDATE </h4>
                 <form action="../queries/" method="POST">
-                    <label for="SSN">SSN</label><br>
+                    <label for="SSN">SSN:</label><br>
                     <input type="text" name="SSN"><br>
 
                     <label for="firstName">firstName:</label><br>
@@ -208,7 +208,7 @@ include "../include/header.php";
             <div>
                 <h4> DELETE </h4>
                 <form action="../queries/" method="POST">
-                    <label for="SSN">SSN</label><br>
+                    <label for="SSN">SSN:</label><br>
                     <input type="text" name="SSN"><br>
 
                     <input type="submit" value="Submit">

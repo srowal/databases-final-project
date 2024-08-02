@@ -14,7 +14,7 @@ include "../include/header.php";
             <h4> CREATE </h4>
             <!-- UPDATE PATH -->
             <form action="../queries/" method="POST">
-                <label for="SSN">SSN</label><br>
+                <label for="SSN">SSN:</label><br>
                 <input type="text" name="SSN"><br>
 
                 <label for="firstName">firstName:</label><br>
@@ -47,7 +47,7 @@ include "../include/header.php";
                 <label for="emailAddress">emailAddress:</label><br>
                 <input type="text" name="emailAddress"><br>
 
-                <label for="emailAddress">membershipNumber:</label><br>
+                <label for="membershipNumber">membershipNumber:</label><br>
                 <input type="text" name="membershipNumber"><br>
 
                 <input type="submit" value="Submit">
@@ -58,7 +58,7 @@ include "../include/header.php";
             <h4> READ </h4>
             <!-- UPDATE PATH -->
             <form action="../queries/" method="GET">
-                <label for="SSN">SSN</label><br>
+                <label for="SSN">SSN:</label><br>
                 <input type="text" name="SSN"><br>
 
                 <input type="submit" value="Submit">
@@ -69,7 +69,7 @@ include "../include/header.php";
             <h4> UPDATE </h4>
             <!-- UPDATE PATH -->
             <form action="../queries/" method="POST">
-                <label for="SSN">SSN</label><br>
+                <label for="SSN">SSN:</label><br>
                 <input type="text" name="SSN"><br>
 
                 <label for="firstName">firstName:</label><br>
@@ -102,7 +102,7 @@ include "../include/header.php";
                 <label for="emailAddress">emailAddress:</label><br>
                 <input type="text" name="emailAddress"><br>
 
-                <label for="emailAddress">membershipNumber:</label><br>
+                <label for="membershipNumber">membershipNumber:</label><br>
                 <input type="text" name="membershipNumber"><br>
 
                 <input type="submit" value="Submit">
@@ -113,7 +113,7 @@ include "../include/header.php";
             <h4> DELETE </h4>
             <!-- UPDATE PATH -->
             <form action="../queries/" method="POST">
-                <label for="SSN">SSN</label><br>
+                <label for="SSN">SSN:</label><br>
                 <input type="text" name="SSN"><br>
 
                 <input type="submit" value="Submit">
