@@ -34,23 +34,42 @@ include "./include/header.php";
     </div>
 
     <div class="query">
-      <a href="./queries/q7.php">7.</a>
+      <a href="./queries/q07.php">7.</a>
     </div>
 
     <div class="query">
-      <a href="./locations.php">8.</a>
+      <h4>8.</h4>
+      <form action = "./queries/q08.php" method="GET">
+        <label for="SSN">SSN</label><br>
+        <input type="text" name="SSN"><br>
+        <input type="submit" value="Submit">
+      </form>
     </div>
 
     <div class="query">
-      <a href="./locations.php">9. </a>
+      <h4>9.</h4>
+      <form action = "./queries/q09.php" method="GET">
+        <label for="location">location</label><br>
+        <input type="text" name="location"><br>
+        <label for="date">date</label><br>
+        <input type="text" name="date"><br>
+        <input type="submit" value="Submit">
+      </form>
     </div>
 
     <div class="query">
-      <a href="./locations.php">10.</a>
+      <a href="./queries/q10.php">10.</a>
     </div>
 
     <div class="query">
-      <a href="./locations.php">11. </a>
+      <h4>11.</h4>
+      <form action = "./queries/q11.php" method="GET">
+        <label for="fromDate">From date:</label><br>
+        <input type="text" name="fromDate"><br>
+        <label for="toDate">To date:</label><br>
+        <input type="text" name="toDate"><br>
+        <input type="submit" value="Submit">
+      </form>
     </div>
 
     <div class="query">
