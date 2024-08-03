@@ -49,13 +49,11 @@ a:hover, button:hover {
     color: rgb(61, 149, 207);
 }
 
-.del-table {
+.cat {
     position: fixed;
     right:0;
     bottom:0;
     margin: 40px;
-    background-color: rgb(233, 233, 233);
-    padding: 15px;
     border-radius: 10px;
 }
 
