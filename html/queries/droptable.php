@@ -9,19 +9,20 @@ error_reporting(E_ALL);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $table = $_POST['drop-table'];
 
-    $sql = "DROP TABLE ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("i", $table);
+    // Validate and sanitize the table name
+    if (preg_match('/^[a-zA-Z0-9_]+$/', $table)) {
+        $sql = "DROP TABLE `$table`";
+        if ($conn->query($sql) === TRUE) {
+            echo "Table '$table' deleted successfully.";
+        } else {
+            echo "Error: " . $conn->error;
+        }
 
-    if ($stmt->execute()) {
-        echo "table deleted";
+        $conn->close();
     } else {
-        echo "Error: " . $stmt->error;
+        echo "Invalid table name.";
     }
-
-    $stmt->close();
-    $conn->close();
-
 } else {
     echo "No table provided.";
 }
+?>
