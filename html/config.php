@@ -1,7 +1,7 @@
 <?php
-define("DB_SERVER", "localhost");
-define("DB_USERNAME", "root");
-define("DB_PASSWORD", "1234");
+define("DB_SERVER", "unc353.encs.concordia.ca");
+define("DB_USERNAME", "unc353_1");
+define("DB_PASSWORD", "c7a5yUuK");
 define("DB_NAME", "unc353_1");
 
 // Create connection
