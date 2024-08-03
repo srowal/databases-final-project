@@ -21,19 +21,19 @@ define('BASE_URL', $_SERVER['SERVER_NAME'] . "/");
 
     <div class="query">
       <h4>3. Create/Delete/Edit/Display a FamilyMember (Primary/Secondary)</h4>
-      <a href=".forms/familyMembers.php">Open statements</a>
+      <a href="./forms/familyMembers.php">Open statements</a>
     </div>
 
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>4. Create/Delete/Edit/Display a ClubMember</h4>
-      <a href=".forms/clubMembers.php">Open statements</a>
+      <a href="./forms/clubMembers.php">Open statements</a>
     </div>
 
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>5. Create/Delete/Edit/Display a TeamFormation</h4>
-      <a href=".forms/teamFormations.php">Open statements</a>
+      <a href="./forms/teamFormations.php">Open statements</a>
     </div>
 
     <!-- UPDATE PATH -->

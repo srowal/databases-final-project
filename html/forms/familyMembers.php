@@ -13,7 +13,7 @@ include "../include/header.php";
             <h2>Primary FamilyMember</h2>
             <div>
                 <h4> CREATE </h4>
-                <form action="../queries/personnels/createPersonnel.php" method="POST">
+                <form action="../queries/familyMembers/createFamily.php" method="POST">
                     <label for="SSN">SSN:</label><br>
                     <input type="text" name="SSN"><br>
 
@@ -53,7 +53,7 @@ include "../include/header.php";
 
             <div>
                 <h4> READ </h4>
-                <form action="../queries/personnels/readPersonnel.php" method="GET">
+                <form action="../queries/familyMembers/readFamily.php" method="GET">
                     <label for="SSN">SSN:</label><br>
                     <input type="text" name="SSN"><br>
 
@@ -63,7 +63,7 @@ include "../include/header.php";
 
             <div>
                 <h4> UPDATE </h4>
-                <form action="../queries/personnels/updatePersonnel.php" method="POST">
+                <form action="../queries/familyMembers/updateFamily.php" method="POST">
                     <label for="SSN">SSN:</label><br>
                     <input type="text" name="SSN"><br>
 
@@ -103,7 +103,7 @@ include "../include/header.php";
 
             <div>
                 <h4> DELETE </h4>
-                <form action="../queries/personnels/deletePersonnel.php" method="POST">
+                <form action="../queries/familyMembers/deleteFamily.php" method="POST">
                     <label for="SSN">SSN:</label><br>
                     <input type="text" name="SSN"><br>
 
@@ -117,49 +117,29 @@ include "../include/header.php";
             <h2>Secondary FamilyMember</h2>
             <div>
                 <h4> CREATE </h4>
-                <form action="../queries/" method="POST">
-                    <label for="SSN">SSN:</label><br>
-                    <input type="text" name="SSN"><br>
-
+                <form action="../queries/familyMembers/createFamily2.php" method="POST">
                     <label for="firstName">firstName:</label><br>
                     <input type="text" name="firstName"><br>
 
                     <label for="lastName">lastName:</label><br>
                     <input type="text" name="lastName"><br>
 
-                    <label for="dateOfBirth">dateOfBirth:</label><br>
-                    <input type="text" name="dateOfBirth"><br>
-
-                    <label for="medicareNumber">medicareNumber:</label><br>
-                    <input type="text" name="medicareNumber"><br>
-
                     <label for="phoneNumber">phoneNumber:</label><br>
                     <input type="text" name="phoneNumber"><br>
 
-                    <label for="address">address:</label><br>
-                    <input type="text" name="address"><br>
-
-                    <label for="city">city:</label><br>
-                    <input type="text" name="city"><br>
-
-                    <label for="province">province:</label><br>
-                    <input type="text" name="province"><br>
-
-                    <label for="postalCode">postalCode:</label><br>
-                    <input type="text" name="postalCode"><br>
-
-                    <label for="emailAddress">emailAddress:</label><br>
-                    <input type="text" name="emailAddress"><br>
+                    <label for="relationship">relationship:</label><br>
+                    <input type="text" name="relationship"><br>
 
                     <input type="submit" value="Submit">
                 </form>
+
             </div>
 
             <div>
                 <h4> READ </h4>
-                <form action="../queries/" method="GET">
-                    <label for="SSN">SSN:</label><br>
-                    <input type="text" name="SSN"><br>
+                <form action="../queries/familyMembers/readFamily2.php" method="GET">
+                    <label for="id">ID:</label><br>
+                    <input type="text" name="id"><br>
 
                     <input type="submit" value="Submit">
                 </form>
@@ -167,9 +147,9 @@ include "../include/header.php";
 
             <div>
                 <h4> UPDATE </h4>
-                <form action="../queries/" method="POST">
-                    <label for="SSN">SSN:</label><br>
-                    <input type="text" name="SSN"><br>
+                <form action="../queries/familyMembers/updateFamily2.php" method="POST">
+                    <label for="id">ID:</label><br>
+                    <input type="text" name="id"><br>
 
                     <label for="firstName">firstName:</label><br>
                     <input type="text" name="firstName"><br>
@@ -177,29 +157,11 @@ include "../include/header.php";
                     <label for="lastName">lastName:</label><br>
                     <input type="text" name="lastName"><br>
 
-                    <label for="dateOfBirth">dateOfBirth:</label><br>
-                    <input type="text" name="dateOfBirth"><br>
-
-                    <label for="medicareNumber">medicareNumber:</label><br>
-                    <input type="text" name="medicareNumber"><br>
-
                     <label for="phoneNumber">phoneNumber:</label><br>
                     <input type="text" name="phoneNumber"><br>
 
-                    <label for="address">address:</label><br>
-                    <input type="text" name="address"><br>
-
-                    <label for="city">city:</label><br>
-                    <input type="text" name="city"><br>
-
-                    <label for="province">province:</label><br>
-                    <input type="text" name="province"><br>
-
-                    <label for="postalCode">postalCode:</label><br>
-                    <input type="text" name="postalCode"><br>
-
-                    <label for="emailAddress">emailAddress:</label><br>
-                    <input type="text" name="emailAddress"><br>
+                    <label for="relationship">relationship:</label><br>
+                    <input type="text" name="relationship"><br>
 
                     <input type="submit" value="Submit">
                 </form>
@@ -207,15 +169,13 @@ include "../include/header.php";
 
             <div>
                 <h4> DELETE </h4>
-                <form action="../queries/" method="POST">
-                    <label for="SSN">SSN:</label><br>
-                    <input type="text" name="SSN"><br>
+                <form action="../queries/familyMembers/deleteFamily2.php" method="POST">
+                    <label for="id">ID:</label><br>
+                    <input type="text" name="id"><br>
 
                     <input type="submit" value="Submit">
                 </form>
             </div>
         </div>
-
-    </div>
 
 <?php include "../include/footer.php";?>

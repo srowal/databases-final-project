@@ -13,7 +13,7 @@ include "../include/header.php";
         <div>
             <h4> CREATE </h4>
             <!-- UPDATE PATH -->
-            <form action="../queries/" method="POST">
+            <form action="../queries/clubMembers/createClubMember.php" method="POST">
                 <label for="SSN">SSN:</label><br>
                 <input type="text" name="SSN"><br>
 
@@ -46,9 +46,6 @@ include "../include/header.php";
 
                 <label for="emailAddress">emailAddress:</label><br>
                 <input type="text" name="emailAddress"><br>
-
-                <label for="membershipNumber">membershipNumber:</label><br>
-                <input type="text" name="membershipNumber"><br>
 
                 <input type="submit" value="Submit">
             </form>
@@ -57,9 +54,9 @@ include "../include/header.php";
         <div>
             <h4> READ </h4>
             <!-- UPDATE PATH -->
-            <form action="../queries/" method="GET">
-                <label for="SSN">SSN:</label><br>
-                <input type="text" name="SSN"><br>
+            <form action="../queries/clubMembers/readClubMember.php" method="GET">
+            <label for="membershipNumber">membershipNumber:</label><br>
+            <input type="text" name="membershipNumber"><br>
 
                 <input type="submit" value="Submit">
             </form>
@@ -68,9 +65,9 @@ include "../include/header.php";
         <div>
             <h4> UPDATE </h4>
             <!-- UPDATE PATH -->
-            <form action="../queries/" method="POST">
-                <label for="SSN">SSN:</label><br>
-                <input type="text" name="SSN"><br>
+            <form action="../queries/clubMembers/updateClubMember.php" method="POST">
+                <label for="membershipNumber">membershipNumber:</label><br>
+                <input type="text" name="membershipNumber"><br>
 
                 <label for="firstName">firstName:</label><br>
                 <input type="text" name="firstName"><br>
@@ -102,9 +99,6 @@ include "../include/header.php";
                 <label for="emailAddress">emailAddress:</label><br>
                 <input type="text" name="emailAddress"><br>
 
-                <label for="membershipNumber">membershipNumber:</label><br>
-                <input type="text" name="membershipNumber"><br>
-
                 <input type="submit" value="Submit">
             </form>
         </div>
@@ -112,9 +106,9 @@ include "../include/header.php";
         <div>
             <h4> DELETE </h4>
             <!-- UPDATE PATH -->
-            <form action="../queries/" method="POST">
-                <label for="SSN">SSN:</label><br>
-                <input type="text" name="SSN"><br>
+            <form action="../queries/clubMembers/deleteClubMember.php" method="POST">
+                <label for="membershipNumber">membershipNumber:</label><br>
+                <input type="text" name="membershipNumber"><br>
 
                 <input type="submit" value="Submit">
             </form>

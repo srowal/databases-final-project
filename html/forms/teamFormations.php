@@ -13,9 +13,7 @@ include "../include/header.php";
         <div>
             <h4> CREATE </h4>
             <!-- UPDATE PATH -->
-            <form action="../queries/" method="POST">
-                <label for="teamFormationID">teamFormationID:</label><br>
-                <input type="text" name="teamFormationID"><br>
+            <form action="../queries/teamFormation/createFormation.php" method="POST">
 
                 <label for="address">address:</label><br>
                 <input type="text" name="address"><br>
@@ -45,7 +43,7 @@ include "../include/header.php";
         <div>
             <h4> READ </h4>
             <!-- UPDATE PATH -->
-            <form action="../queries/" method="GET">
+            <form action="../queries/teamFormation/readFormation.php" method="GET">
                 <label for="teamFormationID">teamFormationID:</label><br>
                 <input type="text" name="teamFormationID"><br>
 
@@ -56,7 +54,7 @@ include "../include/header.php";
         <div>
             <h4> UPDATE </h4>
             <!-- UPDATE PATH -->
-            <form action="../queries/" method="POST">
+            <form action="../queries/teamFormation/updateFormation.php" method="POST">
                 <label for="teamFormationID">teamFormationID:</label><br>
                 <input type="text" name="teamFormationID"><br>
 
@@ -88,7 +86,7 @@ include "../include/header.php";
         <div>
             <h4> DELETE </h4>
             <!-- UPDATE PATH -->
-            <form action="../queries/" method="POST">
+            <form action="../queries/teamFormation/deleteFormation.php" method="POST">
                 <label for="teamFormationID">teamFormationID:</label><br>
                 <input type="text" name="teamFormationID"><br>
 
