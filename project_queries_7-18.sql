@@ -32,7 +32,7 @@ SELECT sm.firstName, sm.lastName, sm.phoneNumber, p.firstName, p.lastName, p.dat
     left JOIN associatedFamily am on am.familyMemberSSN = fm.SSN
     left JOIN clubMembers c on c.membershipNumber = am.membershipNumber
     left JOIN persons p on p.SSN = c.SSN
-    -- CHOSE USER BELOW
+    -- CHOOSE USER BELOW
     WHERE fm.SSN = 777666555;
 
 -- 9.

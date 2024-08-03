@@ -49,4 +49,44 @@ a:hover, button:hover {
     color: rgb(61, 149, 207);
 }
 
+.del-table {
+    position: fixed;
+    right:0;
+    bottom:0;
+    margin: 40px;
+    background-color: rgb(233, 233, 233);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+input[type=submit] {
+    border-radius: 10px;
+    background-color: white;
+    height: 28px;
+    width: 70px;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid black;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.2s;
+    border-color: rgb(61, 149, 207);
+    color: rgb(61, 149, 207);
+}
+
+input[type=text] {
+    height: 23px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    text-indent: 5px;
+}
+
+input[type=text]:focus {
+    border: 1px solid #555;
+  }
+
 

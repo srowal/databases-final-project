@@ -7,6 +7,14 @@ define('BASE_URL', $_SERVER['SERVER_NAME'] . "/");
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+<div class="del-table">
+        <form action="../queries/" method="POST"></form>
+            <label for="drop-table">Drop Table:</label><br>
+            <input type="text" name="drop-table"><br>
+            <input type="submit" value="Submit">
+        </form>
+</div>
+
 <section id="queries-list">
 
     <div class="query">
