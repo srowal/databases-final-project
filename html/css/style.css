@@ -49,12 +49,19 @@ a:hover, button:hover {
     color: rgb(61, 149, 207);
 }
 
-.cat {
+#catimg {
     position: fixed;
     right:0;
-    bottom:0;
+    top:0;
     margin: 40px;
     border-radius: 10px;
+}
+
+#catbtn {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 40px;
 }
 
 input[type=submit] {

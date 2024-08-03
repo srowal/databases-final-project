@@ -7,9 +7,10 @@ define('BASE_URL', $_SERVER['SERVER_NAME'] . "/");
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-<div class="cat">
-    <img class="catimg" src="" alt="">
-</div>
+
+<img id="catimg" src="" alt="">
+<input id="catbtn" type="submit" value="Click for cat" style="width: 120px;">
+
 
 <section id="queries-list">
 
@@ -122,23 +123,20 @@ define('BASE_URL', $_SERVER['SERVER_NAME'] . "/");
 
 <script>
     // Get all anchor tags on the page 
-    var links = document.getElementsByTagName('a'); 
+    var catbutton = document.getElementById('catbtn'); 
     const catimgs = [
         "https://media1.tenor.com/m/-qBsG1HwR4oAAAAC/cat-dance-dancing-cat.gif",
         "https://media.tenor.com/VfNHIfcyAIMAAAAM/watch-a-fat-cat-dance-an-american-dance-girlfriend.gif",
         "https://media1.tenor.com/m/5BYK-WS0__gAAAAd/cool-fun.gif"
     ]
-    // Loop through all the links and attach an event listener to each 
-    for (var i = 0; i < links.length; i++) { 
-      links[i].addEventListener('click', function(event) { 
-       
+    catbutton.addEventListener('click', function(event) { 
+        // Prevent the default link behavior 
         event.preventDefault(); 
          
         console.log('Link clicked: ' + event.target.href); 
          
         document.getElementById("catimg").src = catimgs[Math.floor(Math.random()*catimgs.length)];
-      }); 
-    }
+    }); 
 </script>
 
 <?php include "./include/footer.php";?>
