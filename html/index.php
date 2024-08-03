@@ -39,7 +39,7 @@ define('BASE_URL', $_SERVER['SERVER_NAME'] . "/");
     <!-- UPDATE PATH -->
     <div class="query">
       <h4>6. Assign/Delete/Edit a club member to a team formation</h4>
-      <a href="./locations.php">Open statements</a>
+      <a href="./forms/players.php">Open statements</a>
     </div>
 
     <!-- UPDATE PATH -->
